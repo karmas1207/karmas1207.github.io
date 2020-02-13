@@ -4,7 +4,16 @@ body {
 
 th, td {
   padding: 15px;
-  border-spacing: 20px; 
+  border-spacing: 20px;
+}
+
+@font-face {
+  font-family: "Oswald";
+  src: url(oswald-regular.ttf);
+}
+
+div {
+  font-family: "Oswald";
 }
 
 #meny-border {
@@ -15,7 +24,7 @@ th, td {
 #meny {
   background-color: none;
   list-style-type: none;
-  font-family: "Roboto", "Arial", sans-serif;
+  font-family: "Oswald", Arial, sans-serif;
   font-weight: bold;
   width: 1200px;
   text-align: center;
@@ -35,8 +44,8 @@ font-size: 0.9em;
 }
 a:hover {
 color: #212121;
-text-decoration: none;
-font-size: 1em;
+text-decoration: underline;
+font-size: 0.9em;
 }
 a:active {
 color: #212121;
@@ -46,7 +55,7 @@ font-size: 0.9em;
 
 
 #content {
-  font-family: sans-serif;
+  font-family: "Oswald", Arial, sans-serif;
   background-color: #E1E1E1;
   width: 1200px;
   height: 1000px;
@@ -80,12 +89,12 @@ font-size: 0.9em;
 }
 
 #product-title {
-  font-family: sans-serif;
+  font-family: "Oswald", Arial, sans-serif;
   color: #3C3C3C;
 }
 
 #product-text {
-  font-family: sans-serif;
+  font-family: "Oswald", Arial, sans-serif;
   color: #3C3C3C  ;
 }
 
@@ -95,7 +104,6 @@ font-size: 0.9em;
   width: 1200px;
   height: 500px;
   border-radius: 5px;
-
 }
 
 #headertext {
@@ -113,7 +121,7 @@ margin: auto;
 }
 
 #footer {
-  font-family: sans-serif;
+  font-family: "Oswald", Arial, sans-serif;
   background-color: #E1E1E1;
   width: 1200px;
   height: 90px;
