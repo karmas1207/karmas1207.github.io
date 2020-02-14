@@ -1,5 +1,5 @@
 body {
-  background-color: #B5B5B5;
+  background-color: #494d4c;
 }
 
 th, td {
@@ -12,8 +12,13 @@ th, td {
   src: url(oswald-regular.ttf);
 }
 
+@font-face {
+  font-family: "Oswald-Light";
+  src: url(oswald-light.ttf);
+}
+
 div {
-  font-family: "Oswald";
+  font-family: "Oswald-Light";
 }
 
 #meny-border {
@@ -24,46 +29,50 @@ div {
 #meny {
   background-color: none;
   list-style-type: none;
-  font-family: "Oswald", Arial, sans-serif;
+  font-family: "Oswald-Light", Arial, sans-serif;
   font-weight: bold;
   width: 1200px;
   text-align: center;
   height: 70px;
   border-radius: 5px;
+  table-layout: fixed;
 }
 
 a:link {
-color: #212121;
+color: #ece8e9;
 text-decoration: none;
-font-size: 0.9em;
+font-size: 2em;
 }
 a:visited {
-color: #212121;
+color: #ece8e9;
 text-decoration: none;
-font-size: 0.9em;
+font-size: 2em;
 }
 a:hover {
-color: #212121;
-text-decoration: underline;
-font-size: 0.9em;
+background-color: #ece8e9;
+padding: 14px 25px;
+color: #494d4c;
+text-align: center;
+font-size: 2em;
+display: inline-block;
 }
 a:active {
-color: #212121;
+color: #ece8e9;
 text-decoration: none;
-font-size: 0.9em;
+font-size: 2em;
 }
 
 
 #content {
-  font-family: "Oswald", Arial, sans-serif;
-  background-color: #E1E1E1;
+  font-family: "Oswald-Light", Arial, sans-serif;
+  background-color: #ece8e9;
   width: 1200px;
   height: 1000px;
   border-radius: 5px;
 }
 
 #product-left {
-  background-color: #B5B5B5;
+  background-color: #e2dcdc;
   height: 260px;
   width: 400px;
   float: left;
@@ -72,12 +81,13 @@ font-size: 0.9em;
   margin-left: 50px;
   margin-top: 50px;
   text-align: center;
+  text-decoration:
 }
 
 #product-right {
-  background-color: #CACACA;
+  background-color: #dad1d2;
   float: right;
-  font-size: 1.2em;
+  font-size: 1em;
   height: 260px;
   width: 700px;
   border-top-right-radius: 5px;
@@ -89,17 +99,17 @@ font-size: 0.9em;
 }
 
 #product-title {
-  font-family: "Oswald", Arial, sans-serif;
+  font-family: "Oswald-Light", Arial, sans-serif;
   color: #3C3C3C;
 }
 
 #product-text {
-  font-family: "Oswald", Arial, sans-serif;
+  font-family: "Oswald-Light", Arial, sans-serif;
   color: #3C3C3C  ;
 }
 
 #header {
-  background-image: url("header.jpg");
+  background-image: url("header.png");
   background-size: 1200px;
   width: 1200px;
   height: 500px;
@@ -107,12 +117,12 @@ font-size: 0.9em;
 }
 
 #headertext {
-  font-family: "Times New Roman", Times, serif;
-  font-size: 4em;
+  font-family: "Oswald", Times, serif;
+  font-size: 5em;
   font-style: normal;
   color: white;
   text-align: center;
-  padding-top: 210px;
+  padding-top: 190px;
 }
 
 #sida {
@@ -121,7 +131,7 @@ margin: auto;
 }
 
 #footer {
-  font-family: "Oswald", Arial, sans-serif;
+  font-family: "Oswald-Light", Arial, sans-serif;
   background-color: #E1E1E1;
   width: 1200px;
   height: 90px;
