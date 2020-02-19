@@ -38,17 +38,17 @@ div {
   table-layout: fixed;
 }
 
-a:link {
+a.meny:link {
 color: #ece8e9;
 text-decoration: none;
 font-size: 2em;
 }
-a:visited {
+a.meny:visited {
 color: #ece8e9;
 text-decoration: none;
 font-size: 2em;
 }
-a:hover {
+a.meny:hover {
 background-color: #ece8e9;
 padding: 14px 25px;
 color: #494d4c;
@@ -56,7 +56,7 @@ text-align: center;
 font-size: 2em;
 display: inline-block;
 }
-a:active {
+a.meny:active {
 color: #ece8e9;
 text-decoration: none;
 font-size: 2em;
@@ -71,8 +71,8 @@ font-size: 2em;
   border-radius: 5px;
 }
 
-#product-left {
-  background-color: #e2dcdc;
+#picture-left {
+  background-image: linear-gradient(#C1E8F6, #ece8e9);
   height: 260px;
   width: 400px;
   float: left;
@@ -81,12 +81,37 @@ font-size: 2em;
   margin-left: 50px;
   margin-top: 50px;
   text-align: center;
-  text-decoration:
 }
 
-#product-right {
-  background-color: #dad1d2;
+#text-right {
+  background-image: linear-gradient(#C1E8F6, #ece8e9);
   float: right;
+  font-size: 1em;
+  height: 260px;
+  width: 700px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  align-items: center;
+  margin-right: 50px;
+  margin-top: 50px;
+  text-align: center;
+}
+
+#picture-right {
+  background-image: linear-gradient(#C1E8F6, #ece8e9);
+  height: 260px;
+  width: 400px;
+  float: right;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  margin-left: 50px;
+  margin-top: 50px;
+  text-align: center;
+}
+
+#text-left {
+  background-image: linear-gradient(#C1E8F6, #ece8e9);
+  float: left;
   font-size: 1em;
   height: 260px;
   width: 700px;
