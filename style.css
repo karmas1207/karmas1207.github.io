@@ -138,6 +138,46 @@ text-decoration: none;
 color: white;
 }
 
+a.content-title:link {
+  color: #123747;
+  font-size: 2.5em;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-family: "Oswald";
+  text-decoration: none;
+}
+a.content-title:visited {
+  color: #123747;
+  font-size: 2.5em;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-family: "Oswald";
+  text-decoration: none;
+
+}
+a.content-title:hover {
+  color: #123747;
+  font-size: 2.5em;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-family: "Oswald";
+  text-decoration: underline;
+}
+a.content-title:active {
+  color: #123747;
+  font-size: 2.5em;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-family: "Oswald";
+  text-decoration: none;
+
+
+}
+
 .userpanel {
 position: absolute;
 right: 0;
@@ -187,7 +227,6 @@ margin-left: 15px;
 
 }
 .content-title {
-font-size: 2.5em;
 overflow: hidden;
 text-overflow: ellipsis;
 white-space: nowrap;
