@@ -12,6 +12,7 @@ body {
   background-color: #123747;
   font-family: "Oswald-Light";
   color: #0A1D25;
+  margin: 15px auto auto auto;
 }
 header {
   background-image: url("bg.jpg");
