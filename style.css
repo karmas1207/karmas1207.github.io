@@ -25,8 +25,6 @@ header {
 
 }
 section {
-  border: 1px;
-  border-color: #white;
   background-color: white;
   padding: 20px;
 
@@ -61,7 +59,9 @@ top: 0px;
 .menu {
 color: white;
 font-size: 1em;
-
+max-width: 600px;
+float: left;
+display: flex;
 }
 .menu-content{
 margin: 0 35px 0 0;
@@ -99,13 +99,13 @@ font-family: "Oswald";
 }
 
 a.postby:link {
-color: black;
+color: #123747;
 text-decoration: none;
 font-size: 1em;
 font-family: "Oswald";
 }
 a.postby:visited {
-color: black;
+color: #123747;
 text-decoration: none;
 font-size: 1em;
 font-family: "Oswald";
@@ -117,8 +117,7 @@ font-family: "Oswald";
 text-decoration: underline;
 }
 a.postby:active {
-width: 114px;
-color: black;
+color: #123747;
 text-decoration: none;
 font-size: 1em;
 font-family: "Oswald";
@@ -226,7 +225,6 @@ font-size: 0.8em;
 text-align: center;
 }
 .content {
-background-position: black;
 display: flex;
 flex-direction: row;
 padding: 10px;
@@ -234,7 +232,7 @@ overflow: hidden;
 }
 .con-design {
 display: flex;
-background-color: #FDFDFD;
+
 flex-direction: column;
 margin-left: 15px;
 width: 100%;
@@ -249,12 +247,8 @@ white-space: nowrap;
 overflow: hidden;
 text-overflow: ellipsis;
 border-top: 1px;
-border-top-width: 1px;
 border-top-color: #123747;
 border-top-style: inset;
-border-bottom: 1px;
-border-bottom-width: 2px;
-border-bottom-color: #123747;
 
 }
 .content-text {
@@ -265,10 +259,10 @@ position: relative;
 line-height: 1.2em;
 max-height: 11em;
 text-align: justify;
-border-bottom: 1px;
-border-bottom-width: 1px;
-border-bottom-color: #123747;
-border-bottom-style: inset;
+padding-top: 4px;
+padding-left: 1px;
+
+
 
 
 }
@@ -289,14 +283,19 @@ background: white;
 .content-posted-by {
 font-family: "Oswald";
 font-size: 0.8em;
-padding: 0 0 5px 5px;
 text-align: left;
+padding-left: 5px;
 }
 .read-more {
 font-family: "Oswald";
-font-size: 1.2em;
-padding: 0 0 5px 5px;
+font-size: 1em;
 text-align: right;
+padding-right: 3px;
+border-top: 1px;
+border-top-width: 1px;
+border-top-color: #123747;
+border-top-style: inset;
+
 }
 .footer-text {
 margin-left: 15px;
@@ -338,10 +337,22 @@ font-size: 1em;
 display: inline-block;
 vertical-align: middle;
 transition-duration: 0.2s;
+flex: 1;
 }
 
 .buttonmenu:hover {
 background-color: #123747;
 color: white;
 font-family: "Oswald";
+}
+
+@media all and (max-width: 1000px) {
+.menu { flex-wrap: wrap; }
+.userpanel {opacity: 0;}
+.buttonmenu { flex: 1 1 50%; }
+
+}
+
+@media all and (max-width: 480px) {
+.buttonmenu { flex-basis: 100%; }
 }
