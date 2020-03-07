@@ -20,6 +20,7 @@ header {
   border-top-right-radius: 10px;
   border-color: #0A1D25;
   background-attachment: fixed;
+  background-repeat: repeat-x;
   height: 700px;
 
 }
@@ -40,6 +41,9 @@ footer {
 div {
 display: inline-block;
 
+}
+h1 {
+  text-align:
 }
 .navigation {
 margin-top: 1px;
@@ -69,6 +73,7 @@ color: white;
 text-decoration: none;
 font-size: 1em;
 font-family: "Oswald";
+padding: 10px;
 }
 a.menu:visited {
 color: white;
@@ -77,10 +82,13 @@ font-size: 1em;
 font-family: "Oswald";
 }
 a.menu:hover {
+background-color: #123747;
+color: white;
 text-shadow: 5px;
 font-size: 1em;
 font-family: "Oswald";
-text-decoration: overline;
+text-decoration: none;
+padding: 10px;
 }
 a.menu:active {
 width: 114px;
@@ -119,7 +127,6 @@ font-family: "Oswald";
 a.clip:link {
 width: 114px;
 color: white
-text-decoration: none;
 width: 114px;
 
 }
@@ -142,18 +149,20 @@ color: white;
 a.content-title:link {
   color: #123747;
   font-size: 2.5em;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
   font-family: "Oswald";
   text-decoration: none;
+
+
+  white-space: wrap;
+
+
 }
 a.content-title:visited {
   color: #123747;
   font-size: 2.5em;
   overflow: hidden;
   text-overflow: ellipsis;
-  white-space: nowrap;
+  white-space: wrap;
   font-family: "Oswald";
   text-decoration: none;
 
@@ -163,7 +172,7 @@ a.content-title:hover {
   font-size: 2.5em;
   overflow: hidden;
   text-overflow: ellipsis;
-  white-space: nowrap;
+  white-space: wrap;
   font-family: "Oswald";
   text-decoration: underline;
 }
@@ -172,7 +181,7 @@ a.content-title:active {
   font-size: 2.5em;
   overflow: hidden;
   text-overflow: ellipsis;
-  white-space: nowrap;
+  white-space: wrap;
   font-family: "Oswald";
   text-decoration: none;
 
@@ -193,7 +202,7 @@ padding-right: 50px;
 
 height: 160px;
 width: 100%;
-margin-top: 286px;
+margin-top: 256px;
 background-color: rgba(0,0,0,0.4);
 display: flex;
 flex: 0 80%;
@@ -214,34 +223,71 @@ text-align: center;
 background-position: black;
 display: flex;
 flex-direction: row;
-border: 1px;
-border-color: black;
 padding: 10px;
 }
 .con-design {
 display: flex;
 flex-direction: column;
 margin-left: 15px;
-
+max-width: 60%;
+height: 30%;
 }
 .content-image {
 
 }
 .content-title {
+font-family: "Oswald";
+white-space: nowrap;
 overflow: hidden;
 text-overflow: ellipsis;
-white-space: nowrap;
-font-family: "Oswald";
+border-top: 1px;
+border-top-width: 1px;
+border-top-color: #123747;
+border-top-style: inset;
+border-bottom: 1px;
+border-bottom-width: 2px;
+border-bottom-color: #123747;
 
 }
+
 .content-text {
+overflow: hidden;
+position: relative;
+line-height: 1.2em;
+max-height: 11em;
+text-align: justify;
 
+border-bottom: 1px;
+border-bottom-width: 1px;
+border-bottom-color: #123747;
+border-bottom-style: inset;
 
 }
-.content-optional-text {
+.content-text:before {
+content: '...';
+position: absolute;
+right: 0;
+bottom: 0;
+}
+.content-text:after {
+content: '';
+position: absolute;
+width: 1em;
+height: 1em;
+margin-top: 0.2em;
+background: white;
+}
+.content-posted-by {
 font-family: "Oswald";
 font-size: 0.8em;
-padding: 0 0 5px 0px;
+padding: 0 0 5px 5px;
+text-align: left;
+}
+.read-more {
+font-family: "Oswald";
+font-size: 1.2em;
+padding: 0 0 5px 5px;
+text-align: right;
 }
 .footer-text {
 margin-left: 15px;
@@ -253,4 +299,40 @@ margin-right: 25px;
 float: right;
 width: 32px;
 height: 32px;
+}
+
+.buttonpost {
+background-color: white;
+color: #123747;
+border: 2px solid #123747;
+padding: 15px;
+font-family: "Oswald";
+font-size: 1em;
+display: inline-block;
+vertical-align: middle;
+transition-duration: 0.2s;
+}
+
+.buttonpost:hover {
+background-color: #123747;
+color: white;
+font-family: "Oswald";
+}
+
+.buttonmenu {
+color: white;
+background-color: rgba(0, 0, 0, 0);
+border: 2px solid rgba(0,0,0,0);
+padding: 15px;
+font-family: "Oswald";
+font-size: 1em;
+display: inline-block;
+vertical-align: middle;
+transition-duration: 0.2s;
+}
+
+.buttonmenu:hover {
+background-color: #123747;
+color: white;
+font-family: "Oswald";
 }
