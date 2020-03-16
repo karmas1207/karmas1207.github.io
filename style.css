@@ -30,6 +30,13 @@ padding: 30px;
 color: white;
 display: flow-root;
 }
+
+h1 {
+margin: 0 0 0 15px;
+font-family: "Oswald-Light";
+font-size: 2em;
+color: #123747;
+}
 .navigation {
 margin-top: 1px;
 padding: 50px;
@@ -275,8 +282,9 @@ padding: 15px;
 font-family: "Oswald";
 font-size: 1em;
 display: inline-block;
-vertical-align: middle;
 transition-duration: 0.2s;
+position: relative;
+left: 50%
 }
 .buttonpost:hover {
 background-color: #123747;
