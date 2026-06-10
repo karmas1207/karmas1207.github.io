@@ -3,9 +3,9 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>QUBO — NEON ARCADE</title>
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2435390267574080" crossorigin="anonymous"></script>
+<title># QUBO — CLEAR THE LINES #</title>
 <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2435390267574080" crossorigin="anonymous"></script>
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
 :root{
@@ -891,6 +891,7 @@ function drawGrid(){
 }
 
 function render(){
+  if(!board)return;
   drawGrid();
   // Locked pieces
   board.forEach((row,r)=>row.forEach((type,c)=>{
@@ -930,7 +931,7 @@ function tick(){
 // ==================== CONTROLS ====================
 window.addEventListener('keydown',e=>{
   if(['ArrowDown','ArrowUp','ArrowLeft','ArrowRight',' ','Control'].includes(e.key))e.preventDefault();
-  if(gameOver||paused)return;
+  if(!board||!piece||gameOver||paused)return;
   if(e.key==='ArrowLeft'){if(!collides(piece,piece.x-1,piece.y)){piece.x--;sfxMove()}}
   else if(e.key==='ArrowRight'){if(!collides(piece,piece.x+1,piece.y)){piece.x++;sfxMove()}}
   else if(e.key==='ArrowDown'){if(!collides(piece,piece.x,piece.y+1))piece.y++}
@@ -946,7 +947,7 @@ window.addEventListener('keydown',e=>{
     else for(const dx of[-1,1,-2,2])if(!collides(piece,piece.x+dx,piece.y,ns)){piece.x+=dx;piece.shape=ns;sfxRotate();break}
   }
   else if(e.key==='Escape'&&!paused)showOptions(true);
-  render();
+  if(board&&piece)render();
 });
 
 function pauseGame(){paused=true;clearInterval(tickId);clearInterval(challengeTimer)}
@@ -1004,7 +1005,7 @@ function startGame(){
 }
 
 // ==================== RENDER LOOP ====================
-(function loop(){requestAnimationFrame(loop);if(!gameOver&&!paused&&piece)render()})();
+(function loop(){requestAnimationFrame(loop);if(board&&piece&&!gameOver&&!paused)render()})();
 </script>
 <!-- AD BANNER -->
 <div id="ad-bar">
@@ -1012,16 +1013,13 @@ function startGame(){
   <div id="ad-slot">
     <!-- Replace the content below with your ad tag (e.g. Google AdSense, display ad, etc.) -->
     <div id="ad-placeholder">
-      <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2435390267574080"
-     crossorigin="anonymous"></script>
-      <!-- Qubo-låda -->
       <ins class="adsbygoogle"
-     style="display:inline-block;width:728px;height:90px"
-     data-ad-client="ca-pub-2435390267574080"
-     data-ad-slot="3662137316"></ins>
-      <script>
-       (adsbygoogle = window.adsbygoogle || []).push({});
-      </script>
+    style="display:inline-block;width:728px;height:90px"
+    data-ad-client="ca-pub-2435390267574080"
+    data-ad-slot="3662137316"></ins>
+     <script>
+      (adsbygoogle = window.adsbygoogle || []).push({});
+     </script>
     </div>
   </div>
 </div>
